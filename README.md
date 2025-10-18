@@ -2,6 +2,9 @@
 
 Bem-vindo ao projeto **Livraria Online** — um site desenvolvido com **HTML, CSS e Bootstrap**, que tem como objetivo oferecer uma vitrine moderna e responsiva para exibição e venda de livros cristãos e de diversos gêneros.
 
+**Pessoal preciso da ajuda de vocês!!!
+Como posso melhorar esse trabalho?**
+
 ---
 
 ## 🚀 Tecnologias utilizadas
@@ -37,4 +40,3 @@ Os livros são mostrados em blocos, com capa, título, autor e botão de compra:
     <a href="#" class="btn btn-outline-primary w-100">Comprar</a>
   </div>
 </div>
-
