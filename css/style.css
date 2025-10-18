@@ -1,0 +1,96 @@
+body{
+   background: linear-gradient(to right, #000000 0%, #444444 50%, #ffffff 100%);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   margin: 0;
+
+ }
+
+header, footer{
+    background: linear-gradient(to right, #000000 0%, #444444 50%, #ffffff 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+
+}
+    
+
+.icone{
+    background: repeating-linear-gradient(135deg,#0000 ,#666666 100%);
+    color: #FFF;
+    text-align: center;
+    border-top:3px solid #012340;
+    border-bottom: 3px solid #012340;
+    box-shadow: 0px 10px 35px #012340 !important;
+}
+
+.icone h2{
+    font-size: 100px;
+}
+
+.icone h3{
+    font-size: 20px;
+}
+
+.icone:hover{
+    background: repeating-linear-gradient(135deg,#000000 ,#666666 100%);
+    color: #04D939;
+    text-align: center;
+    border-top:3px solid #04D939;
+    border-bottom: 3px solid #012340;
+    box-shadow: 0px 10px 35px #012340 !important;
+}
+
+.card2{
+    background: repeating-linear-gradient(135deg,#f0f0f0,#FFF 100%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 35px #ccc !important;
+    width: 100% !important;
+}
+.card2 img{
+aspect-ratio: 16/9 !important;
+}
+.card2:hover{
+    background: repeating-linear-gradient(135deg,#333,#000 100%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 35px #666666 !important;
+   color: #FFF !important;
+}
+
+.card-horizontal{
+    border-radius: 15px;
+    box-shadow: 0px 10px 35px #666666;
+    background: repeating-linear-gradient(135deg,#1b49b2,#0094e1 100%);
+    color: #FFF;
+}
+
+.card-horizontal:hover{
+    border-radius: 15px;
+    box-shadow: 0px 10px 35px #333;
+    background: repeating-linear-gradient(135deg,#0094e1, #0D3F9B 100%);
+    color: #FFF;
+}
+.search-container {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente, se quiser */
+    gap: 5px; /* espaçamento entre input e botão */
+    margin-top: 20px; /* só pra dar um espaçamento em cima, opcional */
+  }
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
