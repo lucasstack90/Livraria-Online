@@ -93,3 +93,18 @@ aspect-ratio: 16/9 !important;
   transform: translateY(-2px);
   box-shadow: 0 5px 10px rgba(59,130,246,0.4);
 }
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
