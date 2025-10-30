@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<link rel="stylesheet" href="css/style.css">
+
+<meta charset="UTF-8">
+<title>Login - Aluno e Professor</title>
+
+<style>
+
+  body{
+    background-color: darkblue;
+  }
+
+  input {
+      align-items: center;
+      font-style: italic;
+      font-size: 16px;          
+      padding: 10px;           
+      width: 250px;            
+      border: 1px solid #ccc;  
+      border-radius: 8px;       
+      outline: none;          
+    }
+    
+    input:focus {
+      border-color: #a6b7ff;   
+      box-shadow: 10 10 10px #f200ff; 
+    }
+      .login-tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+    
+      .login-tab {
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #ffffff !important;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s;
+      }
+    
+      .login-tab.active {
+        color: rgb(255, 255, 255) !important;
+        border-color: rgb(255, 255, 255) !important;
+      }
+    
+      .login-form {
+        display: none;
+        text-align: center;
+      }
+    
+      .login-form.active {
+        display: block;
+      }
+
+      label{
+        color: rgb(255, 255, 255) !important;
+      }
+      
+      .button-color{
+        background-color: #00fbff;
+      }
+
+      .button-color:hover{
+        background-color: #00fbee74;
+        color: white;
+      }
+
+      .button-color2{
+        background-color: aquamarine;
+      }
+
+      .button-color2:hover{
+        background-color: rgba(127, 255, 212, 0.597);
+        color: white;
+      }
+
+      i{
+        color: white;
+      }
+
+      i:hover{
+        color: rgb(0, 166, 255);
+        
+      }
+</style>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar mt-5">
+      <div class="container-fluid">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+  </header>
+
+  <section class="mt-5 mb-5">
+    <div class="container">
+      <!-- Abas -->
+      <div class="login-tabs">
+        <div id="tabAluno" class="login-tab active">Aluno</div>
+        <div id="tabProfessor" class="login-tab">Professor</div>
+      </div>
+
+      <!-- Formulário de Aluno -->
+      <form id="formAluno" class="login-form active" method="post" action="destino_aluno.php">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <label for="emailAluno">E-mail do aluno</label><br>
+            <input type="email" id="emailAluno" name="email" placeholder="Digite seu e-mail" required><br><br>
+            <label for="passAluno">Senha:</label><br>
+            <input type="password" id="passAluno" name="password" minlength="8" placeholder="Digite sua senha" required><br><br>
+            <button type="submit" class="btn button-color2 w-100">Entrar como Aluno</button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Formulário de Professor -->
+      <form id="formProfessor" class="login-form" method="post" action="destino_professor.php">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <label for="emailProfessor">E-mail do professor</label><br>
+            <input type="email" id="emailProfessor" name="email" placeholder="Digite seu e-mail" required><br><br>
+            <label for="passProfessor">Senha:</label><br>
+            <input type="password" id="passProfessor" name="password" minlength="8" placeholder="Digite sua senha" required><br><br>
+            <button type="submit" class="btn button-color w-100">Entrar como Professor</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer></footer> 
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+
+  <!-- Script para alternar abas -->
+  <script>
+    const tabAluno = document.getElementById('tabAluno');
+    const tabProfessor = document.getElementById('tabProfessor');
+    const formAluno = document.getElementById('formAluno');
+    const formProfessor = document.getElementById('formProfessor');
+
+    tabAluno.addEventListener('click', () => {
+      tabAluno.classList.add('active');
+      tabProfessor.classList.remove('active');
+      formAluno.classList.add('active');
+      formProfessor.classList.remove('active');
+    });
+
+    tabProfessor.addEventListener('click', () => {
+      tabProfessor.classList.add('active');
+      tabAluno.classList.remove('active');
+      formProfessor.classList.add('active');
+      formAluno.classList.remove('active');
+    });
+  </script>
+
+</body>
+</html>
